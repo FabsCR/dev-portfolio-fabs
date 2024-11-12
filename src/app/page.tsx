@@ -1,13 +1,24 @@
 "use client";
 
+import "../i18n";
+import { useEffect, useState } from "react";
 import { About } from "../components/About";
 import { Projects } from "../components/Projects";
 import { Contact } from "../components/Contact";
 import WhatsappButton from "../components/WhatsappButton";
 import { Certifications } from "../components/Certifications";
-import "../i18n";
 
 export default function HomePage() {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  if (!isClient) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <main className="flex flex-col gap-6">
       <About />
