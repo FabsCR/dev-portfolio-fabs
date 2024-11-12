@@ -2,6 +2,7 @@
 
 import "../i18n";
 import { useEffect, useState } from "react";
+import React, { Suspense } from 'react';
 import { About } from "../components/About";
 import { Projects } from "../components/Projects";
 import { Contact } from "../components/Contact";
@@ -20,12 +21,14 @@ export default function HomePage() {
   }
 
   return (
-    <main className="flex flex-col gap-6">
-      <About />
-      <Projects />
-      <Certifications />
-      <Contact />
-      <WhatsappButton />
-    </main>
+    <Suspense fallback={<div>Loading...</div>}>
+      <main className="flex flex-col gap-6">
+        <About />
+        <Projects />
+        <Certifications />
+        <Contact />
+        <WhatsappButton />
+      </main>
+    </Suspense>
   );
 }
