@@ -1,0 +1,121 @@
+{
+  "navbar": {
+    "title": "Fabian Fernandez",
+    "about": "Acerca de",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "about": {
+    "title": "Acerca de mí",
+    "description": "Soy un estudiante de tercer año de Ingeniería en Computación en el Tecnológico de Costa Rica, impulsado por una pasión por resolver problemas, el autoaprendizaje y el crecimiento continuo. Disfruto enfrentar nuevos desafíos y expandir mis conocimientos tanto a nivel personal como profesional.",
+    "technologiesTitle": "Tecnologías con las que he trabajado:",
+    "skills": "Me gusta trabajar tanto en tecnologías de frontend como de backend y explorar continuamente nuevas herramientas para mejorar mis habilidades.",
+    "cvButton": "Ver mi CV"
+  },
+  "technologies": {
+    "0": "React.js, Vue.js, Nuxt 3",
+    "1": "React Native, Ionic",
+    "2": "Tailwind CSS, JS, TS",
+    "3": "PostgreSQL, MongoDB, Supabase",
+    "4": "Git, GitHub",
+    "5": "Linux (Basado en Arch, Lubuntu)"
+  },
+  "projects": {
+    "title": "Mis Proyectos",
+    "list": [
+      {
+        "title": "Aplicación Móvil de Spotify",
+        "description": "Una aplicación móvil de React Native usando Expo, integrada con la API de Spotify.",
+        "link": "https://github.com/FabsCR/spotify-mobile-app",
+        "linkText": "Ver en GitHub"
+      },
+      {
+        "title": "Reserva de Eventos",
+        "description": "Una aplicación diseñada para simplificar el proceso de reserva de espacios para eventos, construida con Supabase y Nuxt 3.",
+        "link": "https://github.com/mortalcr/BookEvent",
+        "linkText": "Ver en GitHub"
+      },
+      {
+        "title": "Búsqueda de Películas Tecflix",
+        "description": "Una plataforma web para buscar y gestionar películas usando la API de The Movie Database (TMDb). Construido con React, React Router DOM y Bootstrap. Incluye funcionalidades para añadir películas a favoritos y ver detalles.",
+        "link": "https://github.com/rooseveltalej/tecflix-movie-search",
+        "linkText": "Ver en GitHub"
+      },
+      {
+        "title": "Pet Health Tracker",
+        "description": "Una aplicación web progresiva (PWA) para la gestión veterinaria. La aplicación web es para la administración de veterinarios, la aplicación móvil es para clientes y el backend maneja la base de datos usando FastAPI.",
+        "repos": [
+          {
+            "name": "Repositorio Web",
+            "link": "https://github.com/LuisMendezTEC/PetHealthTracker-web",
+            "linkText": "Ver parte Web en GitHub"
+          },
+          {
+            "name": "Repositorio Móvil",
+            "link": "https://github.com/LuisMendezTEC/PetHealthTracker-mobile",
+            "linkText": "Ver parte Móvil en GitHub"
+          },
+          {
+            "name": "Repositorio Backend",
+            "link": "https://github.com/LuisMendezTEC/PetHealthTracker-backend",
+            "linkText": "Ver Backend en GitHub"
+          }
+        ]
+      },
+      {
+        "title": "Renta de DVDs",
+        "description": "Un proyecto enfocado en la replicación y análisis de datos usando PostgreSQL y Tableau para la visualización de datos e insights.",
+        "link": "https://github.com/FabsCR/dvd-rental",
+        "linkText": "Ver en GitHub"
+      },
+      {
+        "title": "Asistente Digital IoT",
+        "description": "Un proyecto IoT para un asistente digital usando Python y ADB para gestionar y automatizar tareas.",
+        "link": "https://github.com/FabsCR/IoT-project",
+        "linkText": "Ver en GitHub"
+      },
+      {
+        "title": "Gestión de Inventario",
+        "description": "Una aplicación CRUD para la gestión de inventario dirigida a pequeñas empresas. Construida con Supabase y React.",
+        "link": "https://github.com/FabsCR/manage-my-stock",
+        "linkText": "Ver en GitHub"
+      },
+      {
+        "title": "ETL con Spark",
+        "description": "Extracción, transformación y carga de datos usando SparkSQL, PostgreSQL y Jupyter notebooks.",
+        "link": "https://github.com/FabsCR/spark",
+        "linkText": "Ver en GitHub"
+      }
+    ]
+  },
+  "certifications": {
+    "title": "Certificaciones",
+    "viewCertificate": "Ver Certificado",
+    "efSet": "Certificado de Inglés EF SET 68/100 (C1 Avanzado)",
+    "scrumFundamentals": "Certificación en Fundamentos de Scrum (SFC™)",
+    "ccnaIntroNetworks": "CCNA: Introducción a Redes",
+    "ccnaSwitchingRouting": "CCNA: Conmutación, Enrutamiento y Fundamentos Inalámbricos",
+    "introCybersecurity": "Introducción a la Ciberseguridad",
+    "cyberFundamentals": "Fundamentos de Ciberseguridad",
+    "cyberEssentials": "Conceptos Básicos de Ciberseguridad",
+    "introIoT": "Introducción a IoT",
+    "networkingEssentials": "Conceptos Básicos de Redes",
+    "pythonEssentials": "Fundamentos de Python 1",
+    "dataScienceFoundations": "Fundamentos de Ciencia de Datos - Nivel 1",
+    "dataScienceTools": "Herramientas de Ciencia de Datos",
+    "c3sa": "Analista Certificado en Ciberseguridad [C3SA]"
+  },
+  "contact": {
+    "title": "Contacto",
+    "description": "No dudes en ponerte en contacto para cualquier consulta, colaboración o pregunta.",
+    "button": "Envíame un correo"
+  },
+  "footer": {
+    "text": "Diseñado y desarrollado por"
+  },
+  "whatsapp": {
+    "statusMessage": "Responde típicamente en una hora",
+    "chatMessage": "¡Hola! 👋 Déjame saber si tienes alguna pregunta.",
+    "placeholder": "Escribe un mensaje..."
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "about": {
+    "title": "About Me",
+    "description": "I'm a third-year Computer Engineering student at Tecnológico de Costa Rica, driven by a passion for problem-solving, self-learning, and continuous growth. I enjoy tackling new challenges and expanding my knowledge both personally and professionally.",
+    "technologiesTitle": "Technologies I've worked with:",
+    "skills": "I enjoy working on both frontend and backend technologies and continuously explore new tools to enhance my skills.",
+    "cvButton": "View my CV"
+  },
+  "technologies": {
+    "0": "React.js, Vue.js, Nuxt 3",
+    "1": "React Native, Ionic",
+    "2": "Tailwind CSS, JS, TS",
+    "3": "PostgreSQL, MongoDB, Supabase",
+    "4": "Git, GitHub",
+    "5": "Linux (Arch-based, Lubuntu)"
+  },
+  "navbar": {
+    "title": "Fabian Fernandez",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "projects": {
+    "title": "My Projects",
+    "list": [
+      {
+        "title": "Spotify Mobile App",
+        "description": "A React Native mobile application using Expo, integrated with the Spotify API.",
+        "link": "https://github.com/FabsCR/spotify-mobile-app",
+        "linkText": "View on GitHub"
+      },
+      {
+        "title": "Book Event",
+        "description": "An application designed to streamline the event venue reservation process, built using Supabase and Nuxt 3.",
+        "link": "https://github.com/mortalcr/BookEvent",
+        "linkText": "View on GitHub"
+      },
+      {
+        "title": "Tecflix Movie Search",
+        "description": "A web platform for searching and managing movies using The Movie Database (TMDb) API. Built with React, React Router DOM, and Bootstrap. Features include adding movies to favorites and viewing movie details.",
+        "link": "https://github.com/rooseveltalej/tecflix-movie-search",
+        "linkText": "View on GitHub"
+      },
+      {
+        "title": "Pet Health Tracker",
+        "description": "A Progressive Web Application (PWA) for veterinary management. The web app is for veterinarian administration, the mobile app is for clients, and the backend handles the database using FastAPI.",
+        "repos": [
+          {
+            "name": "Web Repository",
+            "link": "https://github.com/LuisMendezTEC/PetHealthTracker-web",
+            "linkText": "View Web on GitHub"
+          },
+          {
+            "name": "Mobile Repository",
+            "link": "https://github.com/LuisMendezTEC/PetHealthTracker-mobile",
+            "linkText": "View Mobile on GitHub"
+          },
+          {
+            "name": "Backend Repository",
+            "link": "https://github.com/LuisMendezTEC/PetHealthTracker-backend",
+            "linkText": "View Backend on GitHub"
+          }
+        ]
+      },
+      {
+        "title": "DVD Rental",
+        "description": "A project focused on data replication and analysis using PostgreSQL and Tableau for data visualization and insights.",
+        "link": "https://github.com/FabsCR/dvd-rental",
+        "linkText": "View on GitHub"
+      },
+      {
+        "title": "IoT Digital Assistant",
+        "description": "An IoT project for a digital assistant using Python and ADB to manage and automate tasks.",
+        "link": "https://github.com/FabsCR/IoT-project",
+        "linkText": "View on GitHub"
+      },
+      {
+        "title": "Manage My Stock",
+        "description": "A CRUD application for inventory management aimed at small businesses. Built using Supabase and React.",
+        "link": "https://github.com/FabsCR/manage-my-stock",
+        "linkText": "View on GitHub"
+      },
+      {
+        "title": "Spark ETL",
+        "description": "Extract, transform, and load data using SparkSQL, PostgreSQL, and Jupyter notebooks.",
+        "link": "https://github.com/FabsCR/spark",
+        "linkText": "View on GitHub"
+      }
+    ]
+  },
+  "certifications": {
+    "title": "Certifications",
+    "viewCertificate": "View Certificate",
+    "efSet": "EF SET English Certificate 68/100 (C1 Advanced)",
+    "scrumFundamentals": "Scrum Fundamentals Certified (SFC™)",
+    "ccnaIntroNetworks": "CCNA: Introduction to Networks",
+    "ccnaSwitchingRouting": "CCNA: Switching, Routing, and Wireless Essentials",
+    "introCybersecurity": "Introduction to Cybersecurity",
+    "cyberFundamentals": "Cybersecurity Fundamentals",
+    "cyberEssentials": "Cybersecurity Essentials",
+    "introIoT": "Introduction to IoT",
+    "networkingEssentials": "Networking Essentials",
+    "pythonEssentials": "Python Essentials 1",
+    "dataScienceFoundations": "Data Science Foundations - Level 1",
+    "dataScienceTools": "Data Science Tools",
+    "c3sa": "CWL Certified Cyber Security Analyst [C3SA]"
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Feel free to reach out for any inquiries, collaborations, or questions.",
+    "button": "Email Me"
+  },
+  "footer": {
+    "text": "Designed and developed by"
+  },
+  "whatsapp": {
+    "statusMessage": "Typically replies within an hour",
+    "chatMessage": "Hi there! 👋 Let me know if you have any questions!",
+    "placeholder": "Type a message..."
+  }
+}
