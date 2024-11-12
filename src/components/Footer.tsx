@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="flex flex-col items-center gap-4 py-6 border-t mt-8 bg-gray-100 dark:bg-gray-900">
       <span className="text-sm text-gray-600 dark:text-gray-400">
-        © 2024 My Portfolio
+        Designed and developed by <a href="https://github.com/FabsCR" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300">@FabsCR</a>
       </span>
       <div className="flex gap-3 text-gray-600 dark:text-gray-400">
         <a href="https://github.com/FabsCR" target="_blank" rel="noopener noreferrer" className="hover:text-gray-800 dark:hover:text-white">
