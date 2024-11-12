@@ -2,20 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-white text-primary dark:bg-black dark:text-white;
+}
+
+.navbar {
+  @apply bg-white dark:bg-black shadow-md text-black dark:text-white;
+}
+
+/* Estilos para cajas en el tema oscuro */
+.box {
+  @apply bg-gray-100 dark:bg-gray-800 text-black dark:text-white;
 }
