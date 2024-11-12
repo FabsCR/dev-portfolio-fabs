@@ -34,7 +34,7 @@ export default function Navbar() {
     <header className="py-4 px-8 shadow-md bg-white dark:bg-gray-900">
       <nav className="w-full max-w-6xl mx-auto flex justify-between items-center">
         <span className="text-xl font-bold text-black dark:text-white">
-          My Portfolio
+          Fabian Fernandez
         </span>
 
         {/* Desktop Menu */}
