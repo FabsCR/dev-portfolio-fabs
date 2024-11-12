@@ -42,6 +42,13 @@ export function About() {
           I enjoy working on both frontend and backend technologies and continuously explore new tools to enhance my skills.
         </p>
       </div>
+      <a
+        href="/path.pdf" // TODO: Add link to my CV
+        download
+        className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300 mt-8"
+      >
+        View my CV
+      </a>
     </section>
   );
 }
