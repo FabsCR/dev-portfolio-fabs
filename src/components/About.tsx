@@ -7,6 +7,15 @@ interface TechnologyCardProps {
   label: string;
 }
 
+const technologies = [
+  { icon: <FaCode size={30} />, label: "React.js, Vue.js, Nuxt 3" },
+  { icon: <FaTools size={30} />, label: "React Native, Ionic" },
+  { icon: <FaCode size={30} />, label: "Tailwind CSS, JS, TS" },
+  { icon: <FaDatabase size={30} />, label: "PostgreSQL, MongoDB, Supabase" },
+  { icon: <FaGithub size={30} />, label: "Git, GitHub" },
+  { icon: <FaLinux size={30} />, label: "Linux (Arch-based, Lubuntu)" },
+];
+
 export function About() {
   return (
     <section id="about" className="my-20 px-6 sm:px-8 lg:px-12 text-center">
@@ -22,12 +31,9 @@ export function About() {
           Technologies I&apos;ve worked with:
         </h3>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8">
-          <TechnologyCard icon={<FaCode size={30} />} label="React.js, Vue.js, Nuxt 3" />
-          <TechnologyCard icon={<FaTools size={30} />} label="React Native, Ionic" />
-          <TechnologyCard icon={<FaCode size={30} />} label="Tailwind CSS, JS, TS" />
-          <TechnologyCard icon={<FaDatabase size={30} />} label="PostgreSQL, MongoDB, Supabase" />
-          <TechnologyCard icon={<FaGithub size={30} />} label="Git, GitHub" />
-          <TechnologyCard icon={<FaLinux size={30} />} label="Linux (Arch-based, Lubuntu)" />
+          {technologies.map((tech, index) => (
+            <TechnologyCard key={index} icon={tech.icon} label={tech.label} />
+          ))}
         </div>
       </div>
 
