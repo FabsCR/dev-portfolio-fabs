@@ -1,20 +1,26 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import HttpBackend from 'i18next-http-backend';
 
-// Initialize i18n
-i18n
-  .use(HttpBackend) // Use HttpBackend to load translations from public folder
-  .use(initReactI18next)
-  .init({
-    fallbackLng: 'en',
-    lng: 'en', // default language
-    backend: {
-      loadPath: '/locales/{{lng}}/common.json' // JSON files
-    },
-    interpolation: {
-      escapeValue: false
-    }
-  });
+async function initializeI18n() {
+  if (typeof window !== 'undefined') {
+    const HttpBackend = await import('i18next-http-backend'); // Dynamic import for client-side only
+    i18n.use(HttpBackend.default); // Use .default since it's a default export
+  }
+
+  i18n
+    .use(initReactI18next)
+    .init({
+      fallbackLng: 'en',
+      lng: 'en', // Default language
+      backend: {
+        loadPath: '/locales/{{lng}}/common.json', // JSON files
+      },
+      interpolation: {
+        escapeValue: false, // React already escapes values by default
+      },
+    });
+}
+
+initializeI18n(); // Initialize i18n
 
 export default i18n;
