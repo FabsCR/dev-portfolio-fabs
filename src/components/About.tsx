@@ -8,9 +8,9 @@ interface TechnologyCardProps {
 }
 
 const technologies = [
-  { icon: <FaCode size={30} />, label: "React.js, Vue.js, Nuxt 3" },
+  { icon: <FaCode size={30} />, label: "React.js, Next.js, Vue.js, Nuxt 3" },
   { icon: <FaTools size={30} />, label: "React Native, Ionic" },
-  { icon: <FaCode size={30} />, label: "Tailwind CSS, JS, TS" },
+  { icon: <FaCode size={30} />, label: "Tailwind CSS, JavaScript, TypeScript" },
   { icon: <FaDatabase size={30} />, label: "PostgreSQL, MongoDB, Supabase" },
   { icon: <FaGithub size={30} />, label: "Git, GitHub" },
   { icon: <FaLinux size={30} />, label: "Linux (Arch-based, Lubuntu)" },
@@ -43,8 +43,8 @@ export function About() {
         </p>
       </div>
       <a
-        href="/path.pdf" // TODO: Add link to my CV
-        download
+        href="/cv.pdf"
+        download="Fabian_Fernandez_CV.pdf"
         className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300 mt-8"
       >
         View my CV
