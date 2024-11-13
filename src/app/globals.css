@@ -10,7 +10,16 @@ body {
   @apply bg-white dark:bg-black shadow-md text-black dark:text-white;
 }
 
-/* Estilos para cajas en el tema oscuro */
+/* Styles for boxes in dark theme */
 .box {
   @apply bg-gray-100 dark:bg-gray-800 text-black dark:text-white;
+}
+
+/* Toggle Switch Styling */
+.toggle-checkbox:checked {
+  @apply right-0 border-blue-500;
+}
+
+.toggle-checkbox:checked + .toggle-label {
+  @apply bg-blue-600;
 }
