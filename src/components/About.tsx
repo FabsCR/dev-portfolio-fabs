@@ -2,6 +2,7 @@
 
 import { FaCode, FaDatabase, FaGithub, FaLinux, FaTools } from "react-icons/fa";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 interface TechnologyCardProps {
   icon: JSX.Element;
@@ -19,12 +20,28 @@ const technologies = [
 
 export function About() {
   return (
-    <section id="about" className="my-20 px-6 sm:px-8 lg:px-12 text-center">
-      <h2 className="text-4xl font-bold text-gray-800 dark:text-white mb-6">
+    <motion.section
+      id="about"
+      className="my-20 px-6 sm:px-8 lg:px-12 text-center"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1.5 }}
+    >
+      <motion.h2
+        className="text-4xl font-bold text-gray-800 dark:text-white mb-6"
+        initial={{ y: -50, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+      >
         About Me
-      </h2>
+      </motion.h2>
 
-      <div className="mb-8 flex justify-center">
+      <motion.div
+        className="mb-8 flex justify-center"
+        initial={{ scale: 0.8, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 1.2, ease: "easeOut", delay: 0.2 }}
+      >
         <div className="relative w-64 h-64 rounded-full overflow-hidden shadow-lg transform transition-transform duration-500 hover:scale-110">
           <Image
             src="/Photo.jpeg"
@@ -34,13 +51,23 @@ export function About() {
             priority
           />
         </div>
-      </div>
+      </motion.div>
 
-      <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-12">
+      <motion.p
+        className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-12"
+        initial={{ y: 50, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
+      >
         I&apos;m a third-year Computer Engineering student at Tecnológico de Costa Rica, driven by a passion for problem-solving, self-learning, and continuous growth. I enjoy tackling new challenges and expanding my knowledge both personally and professionally.
-      </p>
+      </motion.p>
 
-      <div className="mb-16">
+      <motion.div
+        className="mb-16"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 0.6 }}
+      >
         <h3 className="text-2xl font-semibold text-blue-600 dark:text-blue-400 mb-8">
           Technologies I&apos;ve worked with:
         </h3>
@@ -49,13 +76,19 @@ export function About() {
             <TechnologyCard key={index} icon={tech.icon} label={tech.label} />
           ))}
         </div>
-      </div>
+      </motion.div>
 
-      <div className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">
+      <motion.div
+        className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed"
+        initial={{ y: 50, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1, ease: "easeOut", delay: 0.8 }}
+      >
         <p className="mb-6">
           I enjoy working on both frontend and backend technologies and continuously explore new tools to enhance my skills.
         </p>
-      </div>
+      </motion.div>
+
       <a
         href="/cv.pdf"
         download="Fabian_Fernandez_CV.pdf"
@@ -63,7 +96,7 @@ export function About() {
       >
         View my CV
       </a>
-    </section>
+    </motion.section>
   );
 }
 

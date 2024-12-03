@@ -1,6 +1,7 @@
 "use client";
 
 import { FaGithub } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const projects = [
   {
@@ -65,15 +66,50 @@ const projects = [
 
 export function Projects() {
   return (
-    <section id="projects" className="my-16 px-6 sm:px-0 text-center">
-      <h2 className="text-3xl font-semibold text-blue-600 dark:text-blue-400 mb-8">My projects</h2>
-      <div className="flex flex-wrap justify-center gap-8">
+    <motion.section
+      id="projects"
+      className="my-16 px-6 sm:px-0 text-center"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 1.2 }}
+    >
+      <motion.h2
+        className="text-3xl font-semibold text-blue-600 dark:text-blue-400 mb-8"
+        initial={{ y: -50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
+        My Projects
+      </motion.h2>
+
+      <motion.div
+        className="flex flex-wrap justify-center gap-8"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ staggerChildren: 0.2 }}
+        variants={{
+          hidden: { opacity: 0 },
+          visible: { opacity: 1 },
+        }}
+      >
         {projects.map((project, index) => (
-          <div
+          <motion.div
             key={index}
             className="p-6 w-full sm:w-1/2 lg:w-1/3 bg-white dark:bg-gray-800 rounded-lg shadow-xl hover:shadow-2xl transition duration-300 ease-in-out flex flex-col justify-between"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            variants={{
+              hidden: { opacity: 0, y: 30 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
           >
-            <h3 className="text-2xl font-semibold text-gray-800 dark:text-white mb-4">{project.title}</h3>
+            <h3 className="text-2xl font-semibold text-gray-800 dark:text-white mb-4">
+              {project.title}
+            </h3>
             <p className="text-gray-600 dark:text-gray-400 mb-4">{project.description}</p>
 
             {project.isMultiRepo ? (
@@ -100,9 +136,9 @@ export function Projects() {
                 <FaGithub className="inline-block mr-2" /> View on GitHub
               </a>
             )}
-          </div>
+          </motion.div>
         ))}
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 }
