@@ -29,8 +29,8 @@ export function About() {
           <Image
             src="/Photo.jpeg"
             alt="Profile Picture"
-            layout="fill"
-            style={{ objectFit: "cover" }}
+            fill
+            className="object-cover"
             priority
           />
         </div>
