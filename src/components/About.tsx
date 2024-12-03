@@ -1,6 +1,7 @@
 "use client";
 
 import { FaCode, FaDatabase, FaGithub, FaLinux, FaTools } from "react-icons/fa";
+import Image from "next/image";
 
 interface TechnologyCardProps {
   icon: JSX.Element;
@@ -22,6 +23,19 @@ export function About() {
       <h2 className="text-4xl font-bold text-gray-800 dark:text-white mb-6">
         About Me
       </h2>
+
+      <div className="mb-8 flex justify-center">
+        <div className="relative w-64 h-64 rounded-full overflow-hidden shadow-lg transform transition-transform duration-500 hover:scale-110">
+          <Image
+            src="/Photo.jpeg"
+            alt="Profile Picture"
+            layout="fill"
+            style={{ objectFit: "cover" }}
+            priority
+          />
+        </div>
+      </div>
+
       <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-12">
         I&apos;m a third-year Computer Engineering student at Tecnológico de Costa Rica, driven by a passion for problem-solving, self-learning, and continuous growth. I enjoy tackling new challenges and expanding my knowledge both personally and professionally.
       </p>
