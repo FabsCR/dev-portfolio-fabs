@@ -77,7 +77,11 @@ export function Certifications() {
               selectedCategory === category
                 ? "bg-blue-600 text-white"
                 : "bg-gray-200 text-gray-800 dark:bg-gray-800 dark:text-gray-200"
-            } hover:bg-blue-700`}
+            } ${
+              selectedCategory === category
+                ? "hover:bg-blue-700"
+                : "hover:bg-gray-300 dark:hover:bg-gray-700"
+            }`}
           >
             {category}
           </button>
