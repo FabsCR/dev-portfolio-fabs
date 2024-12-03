@@ -1,6 +1,7 @@
 "use client";
 
 import { FaExternalLinkAlt } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 interface Certification {
   title: string;
@@ -34,13 +35,43 @@ const certifications: Certification[] = [
 
 export function Certifications() {
   return (
-    <section id="certifications" className="my-20 px-6 sm:px-8 lg:px-12 text-center">
-      <h2 className="text-3xl font-semibold text-blue-600 dark:text-blue-400 mb-8">Certifications</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
+    <motion.section
+      id="certifications"
+      className="my-20 px-6 sm:px-8 lg:px-12 text-center"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 1.5 }}
+    >
+      <motion.h2
+        className="text-3xl font-semibold text-blue-600 dark:text-blue-400 mb-8"
+        initial={{ y: -50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, ease: "easeOut" }}
+      >
+        Certifications
+      </motion.h2>
+
+      <motion.div
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: "-50px" }}
+        variants={{
+          hidden: { opacity: 0 },
+          visible: { opacity: 1, transition: { staggerChildren: 0.3 } },
+        }}
+      >
         {certifications.map((certification, index) => (
-          <div
+          <motion.div
             key={index}
-            className="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg hover:shadow-2xl transition duration-300 ease-in-out flex flex-col justify-between"
+            className="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg flex flex-col justify-between"
+            variants={{
+              hidden: { opacity: 0, y: 50 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            transition={{ duration: 1.5, ease: "easeOut" }}
           >
             <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-4">
               {certification.title}
@@ -53,9 +84,9 @@ export function Certifications() {
             >
               View Certificate <FaExternalLinkAlt />
             </a>
-          </div>
+          </motion.div>
         ))}
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 }
