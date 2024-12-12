@@ -65,7 +65,7 @@ export function Certifications() {
         viewport={{ once: true }}
         transition={{ duration: 1.5, ease: "easeOut" }}
       >
-        Certifications
+        Complementary Training
       </motion.h2>
 
       <div className="flex flex-wrap justify-center gap-4 mb-8">
