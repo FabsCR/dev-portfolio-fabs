@@ -69,7 +69,7 @@ export function About() {
         transition={{ duration: 1, delay: 0.6 }}
       >
         <h3 className="text-2xl font-semibold text-blue-600 dark:text-blue-400 mb-8">
-          Technologies I&apos;ve worked with:
+          My Top Technologies:
         </h3>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8">
           {technologies.map((tech, index) => (
