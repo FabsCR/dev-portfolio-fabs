@@ -1,6 +1,6 @@
 "use client";
 
-import { FaGithub, FaLinkedin, FaInstagram, FaSpotify } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -23,24 +23,6 @@ export default function Footer() {
           aria-label="LinkedIn"
         >
           <FaLinkedin size={24} />
-        </a>
-        <a
-          href="https://www.instagram.com/fabs.fdez/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-pink-600 dark:hover:text-pink-400 transition-colors duration-300 transform hover:scale-110"
-          aria-label="Instagram"
-        >
-          <FaInstagram size={24} />
-        </a>
-        <a
-          href="https://open.spotify.com/user/holacr07"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-green-600 dark:hover:text-green-400 transition-colors duration-300 transform hover:scale-110"
-          aria-label="Spotify"
-        >
-          <FaSpotify size={24} />
         </a>
       </div>
       <span className="text-sm text-gray-500 dark:text-gray-400">
