@@ -37,7 +37,7 @@ export default function Footer() {
         </a>
       </span>
       <span className="text-xs text-gray-400 dark:text-gray-500 mt-2">
-        © {new Date().getFullYear()} FabsCR. All rights reserved.
+        © {new Date().getFullYear()} Fabián José Fernández Fernández. All rights reserved.
       </span>
     </footer>
   );
