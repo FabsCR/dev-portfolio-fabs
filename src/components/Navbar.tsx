@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes, FaRegMoon } from "react-icons/fa";
+import { LuSun } from "react-icons/lu";
 
 export default function Navbar() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -21,13 +22,8 @@ export default function Navbar() {
   const toggleTheme = () => {
     setIsDarkMode((prevMode) => {
       const newMode = !prevMode;
-      if (newMode) {
-        document.documentElement.classList.add("dark");
-        localStorage.setItem("theme", "dark");
-      } else {
-        document.documentElement.classList.remove("dark");
-        localStorage.setItem("theme", "light");
-      }
+      document.documentElement.classList.toggle("dark", newMode);
+      localStorage.setItem("theme", newMode ? "dark" : "light");
       return newMode;
     });
   };
@@ -77,20 +73,16 @@ export default function Navbar() {
           ))}
 
           {/* Dark mode toggle */}
-          <div className="relative inline-block w-12 h-6 align-middle select-none transition duration-200 ease-in">
-            <input
-              type="checkbox"
-              name="toggle"
-              id="toggle"
-              className="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer transition-all duration-300 ease-in-out checked:right-0"
-              checked={isDarkMode}
-              onChange={toggleTheme}
-            />
-            <label
-              htmlFor="toggle"
-              className="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 dark:bg-blue-600 cursor-pointer transition-colors duration-300 ease-in-out"
-            ></label>
-          </div>
+          <button
+            onClick={toggleTheme}
+            className="p-2 rounded-md transition-all duration-300 focus:outline-none bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600"
+          >
+            {isDarkMode ? (
+              <LuSun className="h-5 w-5 text-yellow-500 transition-all duration-300" />
+            ) : (
+              <FaRegMoon className="h-5 w-5 text-gray-700 dark:text-gray-300 transition-all duration-300" />
+            )}
+          </button>
         </div>
 
         {/* Mobile menu button */}
@@ -123,21 +115,17 @@ export default function Navbar() {
               </button>
             ))}
 
-            {/* Dark mode toggle */}
-            <div className="relative inline-block w-12 h-6 align-middle select-none transition duration-200 ease-in mt-3">
-              <input
-                type="checkbox"
-                name="toggle-mobile"
-                id="toggle-mobile"
-                className="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer transition-all duration-300 ease-in-out checked:right-0"
-                checked={isDarkMode}
-                onChange={toggleTheme}
-              />
-              <label
-                htmlFor="toggle-mobile"
-                className="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 dark:bg-blue-600 cursor-pointer transition-colors duration-300 ease-in-out"
-              ></label>
-            </div>
+            {/* Dark mode toggle for mobile */}
+            <button
+              onClick={toggleTheme}
+              className="p-2 mt-3 rounded-md transition-all duration-300 focus:outline-none bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600"
+            >
+              {isDarkMode ? (
+                <LuSun className="h-5 w-5 text-yellow-500 transition-all duration-300" />
+              ) : (
+                <FaRegMoon className="h-5 w-5 text-gray-700 dark:text-gray-300 transition-all duration-300" />
+              )}
+            </button>
           </div>
         </div>
       )}
