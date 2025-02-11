@@ -1,6 +1,8 @@
 "use client";
 
-import { FaCode, FaDatabase, FaGithub, FaLinux, FaTools } from "react-icons/fa";
+import { FaCode, FaDatabase, FaLinux, FaTools, FaServer, FaBug, FaMobileAlt } from "react-icons/fa";
+import { SiTailwindcss, SiSupabase } from "react-icons/si";
+import { TbDeviceImacCode } from "react-icons/tb";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -10,12 +12,16 @@ interface TechnologyCardProps {
 }
 
 const technologies = [
-  { icon: <FaCode size={30} />, label: "React.js, Next.js, Vue.js, Nuxt 3" },
-  { icon: <FaTools size={30} />, label: "React Native, Ionic" },
-  { icon: <FaCode size={30} />, label: "Tailwind CSS, JavaScript, TypeScript" },
-  { icon: <FaDatabase size={30} />, label: "PostgreSQL, MongoDB, Supabase" },
-  { icon: <FaGithub size={30} />, label: "Git, GitHub" },
-  { icon: <FaLinux size={30} />, label: "Linux (Arch-based, Lubuntu)" },
+  { icon: <FaCode size={30} />, label: "React.js, Next.js" },
+  { icon: <TbDeviceImacCode size={30} />, label: "JavaScript, TypeScript" },
+  { icon: <SiTailwindcss size={30} />, label: "Tailwind CSS" },
+  { icon: <FaMobileAlt size={30} />, label: "React Native, Ionic" },
+  { icon: <FaDatabase size={30} />, label: "PostgreSQL, MySQL" },
+  { icon: <SiSupabase size={30} />, label: "Supabase" },
+  { icon: <FaServer size={30} />, label: "Python, Node.js" },
+  { icon: <FaBug size={30} />, label: "SonarQube, Apache JMeter, Pytest" },
+  { icon: <FaTools size={30} />, label: "Git, Jira, Figma" },
+  { icon: <FaLinux size={30} />, label: "Linux (Arch-based, Debian)" },
 ];
 
 export function About() {
@@ -59,8 +65,7 @@ export function About() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
       >
-        I am a final-year Computer Engineering student at Tecnológico de Costa Rica, driven by a passion for problem-solving, self-learning, and continuous growth. With a strong foundation in software development, DevOps, and quality assurance, I am eager to take on challenging projects that push technological boundaries and drive impactful solutions. I thrive in dynamic and collaborative environments, constantly seeking opportunities to innovate, expand my knowledge, and contribute to meaningful developments in the tech industry.
-      </motion.p>
+      I am a final-year Software Engineering student at Tecnológico de Costa Rica, passionate about problem-solving and building efficient software solutions. I thrive in collaborative environments, continuously learning and adapting to new challenges while contributing to impactful projects.      </motion.p>
 
       <motion.div
         className="mb-16"
@@ -71,7 +76,7 @@ export function About() {
         <h3 className="text-2xl font-semibold text-blue-600 dark:text-blue-400 mb-8">
           My Top Technologies:
         </h3>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8">
           {technologies.map((tech, index) => (
             <TechnologyCard key={index} icon={tech.icon} label={tech.label} />
           ))}
@@ -85,16 +90,15 @@ export function About() {
         transition={{ duration: 1, ease: "easeOut", delay: 0.8 }}
       >
         <p className="mb-6">
-          I enjoy working on both frontend and backend technologies and continuously explore new tools to enhance my skills.
-        </p>
+        I enjoy working on both frontend and backend development, with a stronger focus on frontend. I am always exploring new tools and best practices to improve code quality, performance, and user experience.        </p>
       </motion.div>
 
       <a
         href="/cv.pdf"
-        download="Fabian_Fernandez_CV.pdf"
+        download="Fabian_Fernandez_Resume.pdf"
         className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300 mt-8"
       >
-        View my CV
+        View my resume
       </a>
     </motion.section>
   );
