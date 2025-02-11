@@ -59,7 +59,7 @@ export function About() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
       >
-        I&apos;m a third-year Computer Engineering student at Tecnológico de Costa Rica, driven by a passion for problem-solving, self-learning, and continuous growth. I enjoy tackling new challenges and expanding my knowledge both personally and professionally.
+        I am a final-year Computer Engineering student at Tecnológico de Costa Rica, driven by a passion for problem-solving, self-learning, and continuous growth. With a strong foundation in software development, DevOps, and quality assurance, I am eager to take on challenging projects that push technological boundaries and drive impactful solutions. I thrive in dynamic and collaborative environments, constantly seeking opportunities to innovate, expand my knowledge, and contribute to meaningful developments in the tech industry.
       </motion.p>
 
       <motion.div
