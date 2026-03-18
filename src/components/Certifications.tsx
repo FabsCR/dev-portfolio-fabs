@@ -1,7 +1,7 @@
 "use client";
 
 import { FaExternalLinkAlt } from "react-icons/fa";
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { useState } from "react";
 
 interface Certification {
@@ -19,7 +19,7 @@ const certifications: Certification[] = [
   { title: "Cybersecurity Fundamentals", link: "https://www.credly.com/badges/1802feae-badc-4cdc-ba9d-97173f560aa9/linked_in_profile", category: "Networking and Cybersecurity" },
   { title: "Cybersecurity Essentials", link: "https://www.credly.com/badges/ed4dde3e-4c3a-4522-a83e-43dc2020144d?source=linked_in_profile", category: "Networking and Cybersecurity" },
   { title: "Introduction to IoT", link: "https://www.credly.com/badges/b1412e71-3573-4f12-b6e3-385f859c2e48?source=linked_in_profile", category: "IoT" },
-  { title: "Networking Essentials", link: "https://www.credly.com/badges/c78c0009-35c4-4c9e-ae60-b3c255fbaf12?source=linked_in_profile", category: "Networking and Cybersecurity"},
+  { title: "Networking Essentials", link: "https://www.credly.com/badges/c78c0009-35c4-4c9e-ae60-b3c255fbaf12?source=linked_in_profile", category: "Networking and Cybersecurity" },
   { title: "Python Essentials 1", link: "https://www.credly.com/badges/76b05d4f-c483-436c-b9b2-1a78dc78c4e3/linked_in_profile", category: "Data Science" },
   { title: "Data Science Foundations - Level 1", link: "https://www.credly.com/badges/adb67730-7477-4e79-99b6-8841c6ccf71c/linked_in_profile", category: "Data Science" },
   { title: "Data Science Tools", link: "https://www.credly.com/badges/2a598409-56bf-4a06-ad90-1ed4fabfd11b/linked_in_profile", category: "Data Science" },
@@ -36,7 +36,7 @@ export function Certifications() {
       ? certifications
       : certifications.filter((cert) => cert.category === selectedCategory);
 
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -44,9 +44,9 @@ export function Certifications() {
     },
   };
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { opacity: 0, y: 30 },
-    visible: { opacity: 1, y: 0, transition: { duration: 1.5, ease: "easeOut" } },
+    visible: { opacity: 1, y: 0, transition: { duration: 1.5, ease: "easeOut" as const } },
   };
 
   return (
@@ -73,21 +73,19 @@ export function Certifications() {
           <button
             key={category}
             onClick={() => setSelectedCategory(category)}
-            className={`px-4 py-2 rounded-lg font-medium transition ${
-              selectedCategory === category
-                ? "bg-blue-600 text-white"
-                : "bg-gray-200 text-gray-800 dark:bg-gray-800 dark:text-gray-200"
-            } ${
-              selectedCategory === category
+            className={`px-4 py-2 rounded-lg font-medium transition ${selectedCategory === category
+              ? "bg-blue-600 text-white"
+              : "bg-gray-200 text-gray-800 dark:bg-gray-800 dark:text-gray-200"
+              } ${selectedCategory === category
                 ? "hover:bg-blue-700"
                 : "hover:bg-gray-300 dark:hover:bg-gray-700"
-            }`}
+              }`}
           >
             {category}
           </button>
         ))}
       </div>
-      
+
       <motion.div
         key={selectedCategory}
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto"

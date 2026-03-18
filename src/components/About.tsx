@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import { FaCode, FaDatabase, FaLinux, FaTools, FaServer, FaBug, FaMobileAlt } from "react-icons/fa";
 import { SiTailwindcss, SiSupabase } from "react-icons/si";
 import { TbDeviceImacCode } from "react-icons/tb";
@@ -7,7 +8,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 interface TechnologyCardProps {
-  icon: JSX.Element;
+  icon: React.ReactElement;
   label: string;
 }
 
