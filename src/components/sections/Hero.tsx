@@ -29,7 +29,7 @@ export default function Hero() {
         </h1>
 
         <p className="max-w-2xl text-lg md:text-xl text-muted-foreground leading-relaxed mt-2">
-          Experienced in full-stack development, backend infrastructure, and AI solutions. Focused on engineering scalable platforms and optimizing workflows through technology.
+          Architecting scalable web applications and AI-driven solutions. I transform complex requirements into seamless, high-performance digital experiences through modern backend infrastructure and proactive problem-solving.
         </p>
         
         <div className="flex flex-wrap gap-4 mt-8">

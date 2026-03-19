@@ -7,33 +7,33 @@ const experience = [
     role: "Freelance Software Developer",
     company: "Freelancer · Independent Professional",
     date: "Apr 2025 - Present",
-    location: "Remote",
-    tags: ["Full-Stack Development", "AI & Machine Learning Solutions"],
-    description: "I have worked with national companies, international clients, and independent professionals on custom software projects. My experience goes beyond coding, often leading the full project lifecycle, from gathering requirements and planning with clients to delivering incremental releases using agile methodologies. This has strengthened my ability to manage time zones, communicate clearly in English, and adapt to diverse teams and workflows. I focus on building scalable, user-centered solutions with a strong foundation in full-stack development and AI technologies.",
+    location: "Global / Remote",
+    tags: ["Full-Stack", "AI & ML Solutions", "Agile Management"],
+    description: "• Lead end-to-end custom project lifecycles for international clients, acting as sole technical architect.\n• Architect scalable, user-centric web applications and integrate intelligent Machine Learning analysis.\n• Drive continuous agile delivery with a strong focus on clean architecture and bilingual (English/Spanish) communication.",
   },
   {
-    role: "Assistant in Software Requirements Course",
+    role: "Assistant in Software Requirements",
     company: "Tecnológico de Costa Rica",
     date: "Feb 2025 - Present",
     location: "Hybrid",
-    tags: [],
-    description: "Supporting the professor in reviewing assignments, assessing projects, and ensuring the smooth execution of the course.",
+    tags: ["Mentorship", "Documentation"],
+    description: "• Guide computer science students on requirement gathering, system architecture, and UI/UX best practices.\n• Assess technical projects and documentation ensuring adherence to rigorous academic standards.",
   },
   {
-    role: "Digital and Geospatial Projects Engineer",
+    role: "Digital & Geospatial Projects Engineer",
     company: "Constructora HRH",
     date: "Oct 2025 - Feb 2026",
     location: "Alajuela, Costa Rica · On-site",
-    tags: [],
-    description: "Create and manage technical plans, geospatial data, and digital assets for construction and cadastral projects. Combine CAD and GIS work with web development and digital content management to support the company's technical and online operations.",
+    tags: ["GIS", "Web Analytics"],
+    description: "• Centralized corporate data by integrating CAD and GIS systems into automated web modules.\n• Designed digital workflows to map geospatial assets, directly optimizing technical company operations.",
   },
   {
     role: "OGX Member Consideration",
     company: "AIESEC in Costa Rica",
     date: "Nov 2023 - Apr 2024",
     location: "Costa Rica · Hybrid",
-    tags: [],
-    description: "Update the national CRM (Podio) at each stage of the EP process and contact with SUs within 24 hours. Audit all documents in the APD process. Responsible for overseeing the EP process up to the APD and ensuring a smooth transition to PXP. Participate in B2C events for lead generation and analyze data for process improvement. Maintain constant communication with IR Partners for opportunity management.",
+    tags: ["CRM Administration", "B2C Funnels"],
+    description: "• Managed the national CRM (Podio) data pipelines, auditing fast-paced B2C exchange processes.\n• Analyzed lead generation metrics to optimize cross-cultural opportunity management with global partners.",
   }
 ];
 
@@ -43,7 +43,7 @@ const volunteering = [
     company: "Tecnológico de Costa Rica",
     date: "Feb 2023 - Present",
     location: "Education",
-    description: "Provided guidance and support to new computer engineering students during their transition to university life. Assisted students in understanding university processes and accessing academic resources."
+    description: "• Facilitate the academic transition for incoming computer engineering freshmen.\n• Provide hands-on guidance on university resources, time management, and core computer science fundamentals."
   }
 ];
 
@@ -68,7 +68,7 @@ export default function Experience() {
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.5, delay: idx * 0.1 }}
           >
-            <div className="md:w-1/4 text-sm text-muted-foreground pt-1 flex flex-col">
+            <div className="md:w-1/4 text-sm text-muted-foreground pt-1 flex flex-col shrink-0">
               <span className="font-medium text-foreground">{job.date}</span>
               <span className="mt-1">{job.location}</span>
             </div>
@@ -87,7 +87,7 @@ export default function Experience() {
                 </div>
               )}
 
-              <p className="text-muted-foreground leading-relaxed whitespace-pre-line">
+              <p className="text-muted-foreground leading-relaxed whitespace-pre-line text-base">
                 {job.description}
               </p>
             </div>
@@ -106,7 +106,7 @@ export default function Experience() {
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.5, delay: idx * 0.1 }}
           >
-            <div className="md:w-1/4 text-sm text-muted-foreground pt-1 flex flex-col">
+            <div className="md:w-1/4 text-sm text-muted-foreground pt-1 flex flex-col shrink-0">
               <span className="font-medium text-foreground">{job.date}</span>
               <span className="mt-1">{job.location}</span>
             </div>
@@ -114,7 +114,7 @@ export default function Experience() {
               <h3 className="text-xl font-semibold text-foreground group-hover:text-amber-500 dark:group-hover:text-amber-400 transition-colors">
                 {job.role} <span className="text-muted-foreground font-normal"> at {job.company}</span>
               </h3>
-              <p className="text-muted-foreground leading-relaxed whitespace-pre-line">
+              <p className="text-muted-foreground leading-relaxed whitespace-pre-line text-base">
                 {job.description}
               </p>
             </div>

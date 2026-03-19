@@ -8,7 +8,7 @@ const highlightedProjects = [
   {
     title: "AI MMA Analysis Platform",
     category: "Computer Vision & AI",
-    description: "Private customized web platform for tactical opponent analysis using Artificial Intelligence and Computer Vision. Features AI video processing for movement patterns, frame-by-frame posture detection using MediaPipe, and motion tracking with OpenCV.",
+    description: "An exclusive, AI-powered tactical analysis platform utilizing MediaPipe and OpenCV for frame-by-frame posture detection and predictive movement pattern extraction.",
     url: null,
     badge: "Private Client · In Development",
     tags: ["MediaPipe", "OpenCV", "Python", "AI", "Web Platform"],
@@ -16,21 +16,21 @@ const highlightedProjects = [
   {
     title: "Suplidora Santamaría",
     category: "Full-Stack Web App & CMS",
-    description: "A comprehensive web portal including two dedicated sub-sites (Playpark and Synthetic Palm). Features a custom Content Management System and a scalable database architecture built on Supabase.",
+    description: "A robust digital ecosystem featuring a custom headless CMS and dedicated e-commerce sub-sites, engineered leveraging Next.js and Supabase for real-time scalability.",
     url: "https://www.suplidorasantamaria.com",
     tags: ["Next.js", "Supabase", "TypeScript", "Tailwind CSS", "CMS"],
   },
   {
     title: "TrezaCR",
     category: "E-Commerce & Branding",
-    description: "\"Illuminating your projects with modern, efficient, and durable LED solutions.\" An e-commerce and web platform featuring a custom CMS and Supabase backend to manage products and inventory.",
+    description: "A high-performance e-commerce and branded platform with an integrated inventory backend to seamlessly showcase premium LED lighting solutions.",
     url: "https://trezacr.com",
     tags: ["React", "E-Commerce", "Supabase", "CMS", "Tailwind"],
   },
   {
     title: "Rancho Fdez",
     category: "Web Application",
-    description: "A web platform designed for an event venue featuring complex quotation forms and business details.",
+    description: "A dynamic venue booking portal focused on complex quotation workflows and automated business operations built with React.",
     url: "https://ranchofdez.com",
     tags: ["Next.js", "Tailwind CSS", "React", "Forms"],
   }
@@ -39,7 +39,7 @@ const highlightedProjects = [
 const otherProjects = [
   {
     title: "Fabstream",
-    description: "A modern streaming interface showcasing movies and TV shows via public APIs like TMDB and embedded third-party players such as Videasy.",
+    description: "A modern streaming interface showcasing movies and TV shows via public APIs like TMDB and embedded third-party video players.",
     link: "https://fabstream.online",
     isSite: true,
     isMultiRepo: false,
@@ -47,19 +47,19 @@ const otherProjects = [
   },
   {
     title: "Pet Health Tracker",
-    description: "A Progressive Web Application (PWA) for veterinary management. The web app is for veterinarian administration, the mobile app is for clients, and the backend handles the database using FastAPI.",
+    description: "A comprehensive PWA for veterinary management featuring dual frontend environments interacting with a centralized FastAPI backend.",
     link: null,
     isSite: false,
     isMultiRepo: true,
     repos: [
-      { name: "Web Repository", link: "https://github.com/LuisMendezTEC/PetHealthTracker-web" },
-      { name: "Mobile Repository", link: "https://github.com/LuisMendezTEC/PetHealthTracker-mobile" },
-      { name: "Backend Repository", link: "https://github.com/LuisMendezTEC/PetHealthTracker-backend" },
+      { name: "Web App", link: "https://github.com/LuisMendezTEC/PetHealthTracker-web" },
+      { name: "Mobile App", link: "https://github.com/LuisMendezTEC/PetHealthTracker-mobile" },
+      { name: "Backend", link: "https://github.com/LuisMendezTEC/PetHealthTracker-backend" },
     ]
   },
   {
     title: "Pure Harvest Mobile Platform",
-    description: "Collaborated within an Agile development team to deliver a scalable mobile marketplace. Implemented secure authentication and real-time data synchronization using Firebase services.",
+    description: "Agile mobile marketplace backend featuring secure Firebase authentication and real-time data synchronization.",
     link: "https://github.com/zSnails/PureHarvest",
     isSite: false,
     isMultiRepo: false,
@@ -67,7 +67,7 @@ const otherProjects = [
   },
   {
     title: "Distributed Retro Game System",
-    description: "Distributed backend architecture utilizing asynchronous task queues and caching systems to power a retro game platform.",
+    description: "Highly distributed backend architecture utilizing asynchronous Celery task queues and Redis caching to power a retro game platform.",
     link: "https://github.com/AndresEsquivelG/retro-game-ditributed",
     isSite: false,
     isMultiRepo: false,
@@ -75,7 +75,7 @@ const otherProjects = [
   },
   {
     title: "Book Event",
-    description: "An application designed to streamline the event venue reservation process, built using Supabase and Nuxt 3.",
+    description: "Nuxt 3 reservation portal built to streamline the event venue booking process via Supabase.",
     link: "https://github.com/mortalcr/BookEvent",
     isSite: false,
     isMultiRepo: false,
@@ -83,7 +83,7 @@ const otherProjects = [
   },
   {
     title: "Spotify Mobile App",
-    description: "A React Native mobile application using Expo, integrated with the Spotify API.",
+    description: "A React Native mobile application seamlessly consuming the Spotify API.",
     link: "https://github.com/FabsCR/spotify-mobile-app",
     isSite: false,
     isMultiRepo: false,
@@ -91,7 +91,7 @@ const otherProjects = [
   },
   {
     title: "Manage My Stock",
-    description: "A CRUD application for inventory management aimed at small businesses. Built using Supabase and React.",
+    description: "A secure inventory management dashboard developed with React and Supabase RLS policies.",
     link: "https://github.com/FabsCR/manage-my-stock",
     isSite: false,
     isMultiRepo: false,
@@ -99,7 +99,7 @@ const otherProjects = [
   },
   {
     title: "Tecflix Movie Search",
-    description: "A web platform for searching and managing movies using The Movie Database (TMDb) API. Built with React, React Router DOM, and Bootstrap. Features include adding movies to favorites and viewing movie details.",
+    description: "A fully responsive movie tracking application consuming the TMDb API with custom favorites management.",
     link: "https://github.com/rooseveltalej/tecflix-movie-search",
     isSite: false,
     isMultiRepo: false,
@@ -107,23 +107,23 @@ const otherProjects = [
   },
   {
     title: "IoT Digital Assistant",
-    description: "An IoT project for a digital assistant using Python and ADB to manage and automate tasks.",
+    description: "Python-driven IoT toolkit utilizing Android Debug Bridge (ADB) for dynamic task automation.",
     link: "https://github.com/FabsCR/IoT-project",
     isSite: false,
     isMultiRepo: false,
     repos: []
   },
   {
-    title: "Spark ETL",
-    description: "Extract, transform, and load data using SparkSQL, PostgreSQL, and Jupyter notebooks.",
+    title: "Spark ETL Pipeline",
+    description: "Scalable data ingestion pipelines extracting, transforming, and loading structured datasets via SparkSQL.",
     link: "https://github.com/FabsCR/spark",
     isSite: false,
     isMultiRepo: false,
     repos: []
   },
   {
-    title: "DVD Rental",
-    description: "A project focused on data replication and analysis using PostgreSQL and Tableau for data visualization and insights.",
+    title: "DVD Rental DB",
+    description: "PostgreSQL data replication research and Tableau-based visualization dashboards.",
     link: "https://github.com/FabsCR/dvd-rental",
     isSite: false,
     isMultiRepo: false,
@@ -213,19 +213,19 @@ export default function Projects() {
               transition={{ duration: 0.4, delay: idx * 0.1 }}
             >
               <h4 className="text-lg font-bold text-foreground mb-3">{project.title}</h4>
-              <p className="text-muted-foreground text-sm mb-6 flex-grow">{project.description}</p>
+              <p className="text-muted-foreground text-sm mb-6 flex-grow leading-relaxed">{project.description}</p>
               
               <div className="flex flex-col gap-2 mt-auto pt-4 border-t border-border/30">
                 {project.isMultiRepo ? (
                   project.repos?.map((repo, rIdx) => (
-                    <a key={rIdx} href={repo.link} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-foreground hover:text-amber-500 transition-colors">
+                    <a key={rIdx} href={repo.link} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-foreground hover:text-amber-500 transition-colors font-medium">
                       <FaGithub className="w-4 h-4" />
                       {repo.name}
                     </a>
                   ))
                 ) : (
                   project.link && (
-                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-foreground hover:text-amber-500 transition-colors">
+                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-foreground hover:text-amber-500 transition-colors font-medium">
                       {project.isSite ? <GlobeAltIcon className="w-4 h-4" /> : <FaGithub className="w-4 h-4" />}
                       {project.isSite ? "Visit Website" : "View Source Code"}
                     </a>
