@@ -2,15 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-white text-primary dark:bg-black dark:text-white transition-colors duration-300;
-}
+@layer base {
+  :root {
+    --background: #ffffff;
+    --foreground: #09090b; /* zinc-950 */
+    --muted: #f4f4f5; /* zinc-100 */
+    --muted-foreground: #71717a; /* zinc-500 */
+    --border: #e4e4e7; /* zinc-200 */
+    --accent: #27272a; /* zinc-800 */
+  }
 
-.navbar {
-  @apply bg-white dark:bg-black shadow-md text-black dark:text-white;
-}
+  .dark {
+    --background: #09090b; /* zinc-950 */
+    --foreground: #fafafa; /* zinc-50 */
+    --muted: #27272a; /* zinc-800 */
+    --muted-foreground: #a1a1aa; /* zinc-400 */
+    --border: #27272a; /* zinc-800 */
+    --accent: #fafafa; /* zinc-50 */
+  }
 
-/* Styles for boxes in dark theme */
-.box {
-  @apply bg-gray-100 dark:bg-gray-800 text-black dark:text-white;
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground antialiased selection:bg-zinc-300 selection:text-zinc-900 dark:selection:bg-zinc-700 dark:selection:text-zinc-50;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
 }
