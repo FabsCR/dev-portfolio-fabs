@@ -31,7 +31,7 @@ const highlightedProjects = [
     title: "STCA Center",
     category: "Corporate Platform",
     description: "A comprehensive frontend solution connecting business vision with modern technological strategies. Engineered with Next.js and complete internationalization (i18n).",
-    url: "https://stca-center.vercel.app/es",
+    url: "https://stcacenter.com",
     badge: null,
     tags: ["Next.js", "i18n", "React", "Frontend", "Tailwind"],
   },
