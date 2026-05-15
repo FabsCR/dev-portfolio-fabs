@@ -6,14 +6,6 @@ import { ChevronDownIcon, BriefcaseIcon } from "@heroicons/react/24/outline";
 
 const experience = [
   {
-    role: "Full Stack Developer",
-    company: "STCA Center",
-    date: "Apr 2026 - Present",
-    location: "San José, Costa Rica · Remote",
-    tags: ["Contract", "React.js", "Node.js", "SQL"],
-    description: "• System Scalability: Modernizing a high-traffic enterprise platform integrated with a core ERP.\n• Feature Engineering: Optimizing critical modules using React.js, Node.js, and SQL.\n• API Orchestration: Enhancing complex integrations between frontend and backend services.\n• Incremental Development: Delivering technical improvements through milestone-based objectives.",
-  },
-  {
     role: "Freelance Software Developer",
     company: "Freelancer · Independent Professional",
     date: "Apr 2025 - Present",
