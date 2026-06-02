@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { ArrowDownTrayIcon, EnvelopeIcon } from "@heroicons/react/24/outline";
+import { EnvelopeIcon } from "@heroicons/react/24/outline";
 
 export default function Hero() {
   return (
@@ -53,14 +53,7 @@ export default function Hero() {
             <EnvelopeIcon className="w-5 h-5 group-hover:scale-110 transition-transform" />
             Let's build together
           </a>
-          <a 
-            href="/cv.pdf" 
-            download="Fabian_Fernandez_Resume.pdf"
-            className="group flex items-center gap-2 px-8 py-4 bg-background text-foreground border border-border/60 font-semibold rounded-full hover:bg-muted/50 hover:border-border transition-all duration-300 shadow-sm hover:-translate-y-1"
-          >
-            <ArrowDownTrayIcon className="w-5 h-5 group-hover:-translate-y-1 transition-transform" />
-            Download Resume
-          </a>
+
         </div>
       </motion.div>
 
