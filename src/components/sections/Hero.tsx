@@ -76,7 +76,7 @@ export default function Hero() {
         {/* Main image container */}
         <div className="absolute inset-0 border border-border/40 rounded-[3rem] bg-background/50 overflow-hidden shadow-2xl">
           <Image
-            src="/Photo.jpeg"
+            src="/Photo.png"
             alt="Fabián Fernández"
             fill
             className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
