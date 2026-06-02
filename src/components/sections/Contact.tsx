@@ -22,7 +22,7 @@ export default function Contact() {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       >
-        Say Hello
+        Contact me
       </motion.a>
     </motion.section>
   );
