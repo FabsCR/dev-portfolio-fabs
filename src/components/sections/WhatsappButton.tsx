@@ -19,7 +19,7 @@ export default function WhatsappButton() {
       <FloatingWhatsApp
         phoneNumber="+50685684670"
         accountName="Fabián Fernández"
-        avatar="/Photo.jpeg"
+        avatar="/Photo.png"
         statusMessage="Typically replies within an hour"
         chatMessage="Hi there! 👋 Let me know if you have any questions!"
         placeholder="Type a message..."
